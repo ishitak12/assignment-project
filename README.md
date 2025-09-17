@@ -9,6 +9,12 @@ A **Streamlit web application** that extracts **text, tables, and charts** from 
 - Detect **charts and images** in PDFs.
 - Download a **complete JSON output** of the PDF.
 - Built with **Streamlit**, **PyMuPDF**, **Camelot**, **pdfplumber**.
+> **Optional:** For more accurate table extraction using Camelot in "lattice" mode, install **Ghostscript** according to your OS:  
+> - **Windows:** Download and install from [Ghostscript](https://www.ghostscript.com/download/gsdnld.html)  
+> - **Mac:** `brew install ghostscript`  
+> - **Linux:** `sudo apt-get install ghostscript python3-tk`  
+>
+> **Note:** The app has multiple fallbacks (Camelot "stream" mode, pdfplumber, and word-based table reconstruction). So even if Ghostscript is not installed, the app will still work, though some complex tables might be less accurately extracted.
 
 ## 📦 Installation & Setup
 
@@ -29,4 +35,6 @@ pandas
 #Run the Streamlit app:
 
 streamlit run app.py
+
+
 

@@ -12,11 +12,11 @@ A **Streamlit web application** that extracts **text, tables, and charts** from 
 
 ## 📦 Installation & Setup
 
-Clone the repository and navigate to the p  roject folder:
+Clone the repository and navigate to the project folder:
 
 ```bash
 git remote add origin https://github.com/ishitak12/assignment-project.git
-cd app.py
+cd assignment-project
 
 ##Install Python dependencies:
 pip install -r requirements.txt
